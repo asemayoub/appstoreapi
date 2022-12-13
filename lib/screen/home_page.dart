@@ -6,6 +6,7 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(onPressed: () {}),
       appBar: AppBar(
         title: Text('home'),
       ),
