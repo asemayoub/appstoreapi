@@ -27,7 +27,12 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Homepage(),
+      routes: {
+
+        Homepage.id : (context) => Homepage(),
+
+      },
+      initialRoute: Homepage.id,
     );
   }
 }
