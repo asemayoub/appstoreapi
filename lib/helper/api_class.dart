@@ -18,7 +18,8 @@ class Api {
     if (response.statusCode == 200) {
       return jsonDecode(response.body);
     } else {
-      throw Exception('Erorr In Status code Is : ${response.statusCode}');
+      throw Exception(
+          'Erorr In Status code Is : ${response.statusCode} with Body ${jsonDecode(response.body)}');
     }
   }
 

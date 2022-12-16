@@ -15,16 +15,18 @@ class AllProductServices {
 
     // هنا انا بعرفله ليسته فاضيه عشان يحطلي فيها المنتجات
 
-    List<ProductModel> productList = [];
+    List<ProductModel> productsList = [];
 
     for (int i = 0; i < data.length; i++) {
       // ههنا انا هخليه يضيف المنتجات من اللوب
 
-      productList.add(data[i]);
+      productsList.add(
+        ProductModel.fromJson(data[i]),
+      );
     }
 
     // هنا بعد مضيفت المنتجات في الليسا برجعها تاني للفانكشن
 
-    return productList;
+    return productsList;
   }
 }
